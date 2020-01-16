@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
    $(".btn").click(function() {
 
@@ -5,16 +6,13 @@ $(document).ready(function() {
     console.log(fanimal);
 
     if (fanimal === "wombats") {
-    $(".wombats-hidden").show();
-    $("#wombats-showing").toggle();
-
+    $(".wombats-hidden").toggle();
+   
     } else if (fanimal === "pacaranas") {
-      $(".pacaranas-hidden").show();
-      $("#pacaranas-showing").toggle();
+      $(".pacaranas-hidden").toggle();
    
     } else if (fanimal === "red pandas") {
-      $(".redPandas-hidden").show();
-      $("#redPandas-showing").Toggle();
+      $(".redPandas-hidden").toggle();
 
     } else {
       document.body.style.backgroundColor = "black"; 
