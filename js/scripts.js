@@ -1,16 +1,20 @@
 $(document).ready(function() {
-  $("#btn").click(function() {
+   $(".btn").click(function() {
+
     var fanimal = $("input:radio[name=animal]:checked").val();
+    console.log(fanimal);
 
-    if (fanimal === "blue") {
-        document.body.style.backgroundColor = "wombats";
-    } else if (fanimal === "yellow") {
-      document.body.style.backgroundColor = "pacaranas";
+    if (fanimal === "wombats") {
+    $(".wombats-hidden").show();
 
-    } else if (fanimal === "red") {
-      document.body.style.backgroundColor = "red pandas";
+    } else if (fanimal === "pacaranas") {
+      $(".pacaranas-hidden").show();
+
+    } else if (fanimal === "red pandas") {
+      $(".redPandas-hidden").show();
+
     } else {
-      document.body.style.backgroundColor = "black";
+      document.body.style.backgroundColor = "black"; 
     }
     event.preventDefault();
     });
