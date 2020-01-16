@@ -1,0 +1,21 @@
+body {
+  margin: 25px;
+  padding: 10px;
+}
+
+.btn {
+background-color: aqua;
+}
+
+.wombats-hidden {
+display: none;
+}
+
+.redPandas-hidden {
+  display: none;
+}
+
+.pacaranas-hidden {
+  display: none;
+
+}
